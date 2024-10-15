@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header nav ul {
+    list-style: none; 
+    display: flex;
+    justify-content: center; 
+    background-color: #333; 
+    padding: 15px 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px; 
+}
+
+header nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+header nav ul li a:hover {
+    color: #0099ff; 
+}
+
+
+header nav ul li a:active {
+    border-bottom: 2px solid #0044ff; 
+}
+
+.foto img {
+    width:100px; 
+    height: auto; 
+    border-radius: 100%;
+    transition: transform 0.3s ease; 
+    
+}
+
+.foto img:hover {
+    transform: scale(1.1); 
+    border: 5px solid #00305c; 
+   
+}
+
+
+
+.habilidades {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.habilidade-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.habilidade {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habilidade h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.habilidade p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+#python:hover h3 {
+    color: yellow;
+}
+
+#java:hover h3 {
+    color: purple;
+}
+
+#javascript:hover h3 {
+    color: red;
+}
+
+.habilidade:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projetos {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projeto-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projeto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    min-width: 250px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.projeto h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.projeto p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.projeto a.ver-mais {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#contato {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#formContato {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#formContato label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#formContato input[type="text"],
+#formContato input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#formContato input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    .habilidade, .projeto {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .habilidade, .projeto {
+        width: 100%;
+    }
+}
